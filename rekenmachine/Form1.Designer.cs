@@ -71,7 +71,7 @@
             button0.TabIndex = 22;
             button0.Text = "0";
             button0.UseVisualStyleBackColor = true;
-            button0.Click += button0_Click;
+            button0.Click += button_click;
             // 
             // buttonBack
             // 
@@ -107,7 +107,7 @@
             button1.TabIndex = 9;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += button_click;
             // 
             // button2
             // 
@@ -117,7 +117,7 @@
             button2.TabIndex = 10;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += button_click;
             // 
             // button3
             // 
@@ -127,7 +127,7 @@
             button3.TabIndex = 11;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click_1;
+            button3.Click += button_click;
             // 
             // button4
             // 
@@ -137,7 +137,7 @@
             button4.TabIndex = 13;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
-            button4.Click += button6_Click_1;
+            button4.Click += button_click;
             // 
             // button5
             // 
@@ -147,7 +147,7 @@
             button5.TabIndex = 14;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click_1;
+            button5.Click += button_click;
             // 
             // button6
             // 
@@ -157,7 +157,7 @@
             button6.TabIndex = 15;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click_2;
+            button6.Click += button_click;
             // 
             // button7
             // 
@@ -167,7 +167,7 @@
             button7.TabIndex = 17;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = true;
-            button7.Click += button7_Click_1;
+            button7.Click += button_click;
             // 
             // button8
             // 
@@ -177,7 +177,7 @@
             button8.TabIndex = 18;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
-            button8.Click += button8_Click_1;
+            button8.Click += button_click;
             // 
             // button9
             // 
@@ -187,7 +187,7 @@
             button9.TabIndex = 19;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
-            button9.Click += buttongea_Click;
+            button9.Click += button_click;
             // 
             // buttonX
             // 
@@ -248,7 +248,6 @@
             nothing2.Size = new Size(50, 45);
             nothing2.TabIndex = 27;
             nothing2.UseVisualStyleBackColor = true;
-            nothing2.Click += nothing2_Click;
             // 
             // richTextBox2
             // 
@@ -273,7 +272,6 @@
             richTextBox3.Size = new Size(162, 96);
             richTextBox3.TabIndex = 29;
             richTextBox3.Text = "";
-            richTextBox3.TextChanged += richTextBox3_TextChanged;
             // 
             // Form1
             // 
@@ -306,7 +304,6 @@
             ImeMode = ImeMode.On;
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
         }
 

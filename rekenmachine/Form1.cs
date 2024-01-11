@@ -14,52 +14,6 @@ namespace rekenmachine
             InitializeComponent();
         }
 
-        private void zero_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "1";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "2";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "3";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "4";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "5";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button6_Click_2(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "6";
-            this.richTextBox1.Text += input;
-        }
-
         private void buttonMinus_Click(object sender, EventArgs e)
         {
             if (input == string.Empty)
@@ -75,40 +29,6 @@ namespace rekenmachine
             double.TryParse(operand2, out num2);
             this.richTextBox1.Text = $"{num1} {operation} {num2}";
         }
-
-        private void button7_Click_1(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "7";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button8_Click_1(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "8";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "9";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "0";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button12_Click(object sender, EventArgs e)
         {
             if (input == string.Empty)
@@ -169,55 +89,6 @@ namespace rekenmachine
                 }
             }
         }
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button23_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button24_Click(object sender, EventArgs e)
         {
@@ -232,25 +103,6 @@ namespace rekenmachine
         {
             this.richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
             this.richTextBox2.SelectionAlignment = HorizontalAlignment.Right;
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // 
-        }
-
-        private void buttongea_Click(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "9";
-            this.richTextBox1.Text += input;
-        }
-
-        private void button0_Click(object sender, EventArgs e)
-        {
-            this.richTextBox1.Text = "";
-            input += "0";
-            this.richTextBox1.Text += input;
         }
 
         private void buttonPlus_Click(object sender, EventArgs e)
@@ -285,12 +137,6 @@ namespace rekenmachine
             double.TryParse(operand2, out num2);
             this.richTextBox1.Text = $"{num1} {operation} {num2}";
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void UpdateInputDisplay()
         {
             operand2 = input;
@@ -306,16 +152,6 @@ namespace rekenmachine
             this.richTextBox2.Text = $"{operand1} {operation} {input}";
         }
 
-        private void richTextBox3_TextChanged(object sender, EventArgs e)
-        {
-            //
-        }
-
-        private void nothing2_Click(object sender, EventArgs e)
-        {
-            //
-        }
-
         private void nothing1_Click(object sender, EventArgs e)
         {
             this.richTextBox1.Text = "";
@@ -324,6 +160,15 @@ namespace rekenmachine
             this.operand1 = string.Empty;
             this.operand2 = string.Empty;
             this.operation = ' ';
+        }
+
+        private void button_click(object sender, EventArgs e)
+        {
+            var ButtonText = (sender as Button).Text;
+            this.richTextBox1.Text = "";
+            input += ButtonText;
+            this.richTextBox1.Text += input;
+            this.richTextBox2.Text += input;            
         }
     }
 }
